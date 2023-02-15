@@ -102,5 +102,6 @@ const clickRestart = () => {
 };
 
 function close_window() {
+	window.opener = self;
 	window.close();
 }
