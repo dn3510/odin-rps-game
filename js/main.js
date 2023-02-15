@@ -102,5 +102,5 @@ const clickRestart = () => {
 };
 
 function close_window() {
-	close();
+	window.close();
 }
