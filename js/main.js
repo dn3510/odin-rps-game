@@ -1,7 +1,6 @@
 // Rock, Paper, Scissors
 let playerPoint = 0;
 let computerPoint = 0;
-let winner = '';
 
 // Get DOM Elements
 const rockImage = document.getElementById('rockImage');
