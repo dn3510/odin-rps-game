@@ -1,0 +1,216 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--modal-duration: 1s;
+	--modal-color: #1b1a21;
+}
+
+html,
+body {
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	color: whitesmoke;
+	min-width: 100vw;
+	height: 100%;
+	overflow: hidden;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+h2 {
+	margin-top: 1rem;
+}
+
+h3 {
+	margin-top: 2rem;
+}
+
+.container {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.75rem;
+	background-color: #1f2937;
+	color: #e5e7eb;
+	padding: 10px 0;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+.inputClass {
+	border: 0 solid black;
+	background-color: transparent;
+}
+
+.inputClass:hover {
+	opacity: 40%;
+}
+
+.inputClass:active {
+	transform: translateY(5px);
+}
+
+.scoreboard {
+	display: flex;
+	gap: 5rem;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+}
+
+.selection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin-top: 2rem;
+	font-size: 1.5625rem;
+}
+
+.who {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.point {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.btn-play:hover {
+	opacity: 40%;
+}
+
+.restart-timer p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.25rem;
+}
+
+/* #disP {
+	visibility: hidden;
+} */
+
+/* Modal */
+
+.rps {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rps-content {
+	margin: 10% auto;
+	width: 60%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name: modalopen;
+	animation-duration: var(--modal-duration);
+}
+/* 
+.modal-header {
+	background: var(--modal-color);
+	padding: 15px;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+} */
+
+.rps-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px 20px;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 900;
+	background: #fff;
+}
+
+/* .modal-footer {
+	background: var(--modal-color);
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+} */
+
+.close {
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+	color: #fff;
+}
+
+/* .close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+} */
+
+/* @keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+} */
+
+.btnMessage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	margin-top: 20px;
+}
+
+.btnMess {
+	padding: 7px 14px;
+	border-radius: 5px;
+	border: none;
+}
+
+.btnMess:hover {
+	opacity: 40%;
+}
+
+.btnMess:active {
+	transform: translateY(5px);
+}

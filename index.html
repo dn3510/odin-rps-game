@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Rock, Paper and Scissors</title>
+	</head>
+	<body>
+		<div class="header">
+			<h1>ROCK, PAPER and SCISSORS</h1>
+			<h2>The First to Score 5 Points Wins…</h2>
+			<h3>Select Rock, Paper or Scissors</h3>
+		</div>
+		<div class="container">
+			<button class="inputClass" id="rockImage">
+				<img src="./images/rock.png" alt="rock" width="100px" height="100px" />
+			</button>
+			<button class="inputClass" id="paperImage">
+				<img src="./images/paper.png" alt="paper" width="100px" height="100px" />
+			</button>
+			<button class="inputClass" id="scissorsImage">
+				<img src="./images/scissors.png" alt="scissors" width="100px" height="100px" />
+			</button>
+		</div>
+		<div class="selection">
+			<div class="playerSelection">
+				<p id="playSelect">Player</p>
+			</div>
+			<div class="vsMid">
+				<p id="midMessage">- vs -</p>
+			</div>
+			<div class="computerSelection">
+				<p id="compSelect">Computer</p>
+			</div>
+		</div>
+		<div class="who">
+			<p id="whoWins"></p>
+		</div>
+		<div class="scoreboard">
+			<div class="player">
+				<p>PLAYER</p>
+				<p class="point" id="playerPoint">0</p>
+			</div>
+			<div class="computer">
+				<p>COMPUTER</p>
+				<p class="point" id="computerPoint">0</p>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<p>Copyright 2023 &copy; The Odin Project</p>
+		</footer>
+
+		<!-- RPS Game Modal -->
+
+		<div id="rps-game" class="rps">
+			<div class="rps-content">
+				<div class="rps-body">
+					<p class="gameWinner">Message</p>
+				</div>
+				<div class="btnMessage">
+					<button class="btnMess" id="playAgain">Play Again?</button>
+					<button class="btnMess" id="playExit">Exit</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
