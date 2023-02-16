@@ -15,14 +15,12 @@ const whoWinsString = document.getElementById('whoWins');
 const rpsGame = document.querySelector('#rps-game');
 const gameMessage = document.querySelector('.gameWinner');
 const restartBtn = document.querySelector('#playAgain');
-const exitBtn = document.querySelector('#playExit');
 
 // Events
 rockImage.addEventListener('click', () => handleClick('rock'));
 paperImage.addEventListener('click', () => handleClick('paper'));
 scissorsImage.addEventListener('click', () => handleClick('scissors'));
 restartBtn.addEventListener('click', () => clickRestart('button'));
-exitBtn.addEventListener('click', () => close_window('button'));
 
 let playerChoice;
 const handleClick = (playerChoice) => {
@@ -100,8 +98,3 @@ const clickRestart = () => {
 	rpsGame.style.display = 'none';
 	document.location.reload();
 };
-
-function close_window() {
-	window.opener = self;
-	window.close();
-}
